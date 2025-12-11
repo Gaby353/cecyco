@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="{{ url_for('static', filename='images/loguito.png') }}">
+  <title>CECYCO | Reciclando el Futuro</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <script defer src="{{ url_for('static', filename='JS/script.js') }}"></script>
+</head>
+
+<body>
+
+<!-- BOTÓN HAMBURGUESA -->
+<button class="hamburguesa" id="open-menu">☰</button>
+
+<!-- MENÚ LATERAL DESPLEGABLE -->
+<aside class="menu-lateral" id="menu">
+  <button class="cerrar" id="close-menu">✕</button>
+
+  <div class="logos">
+    <img src="{{ url_for('static', filename='images/loguito.png') }}" alt="Logo Escuela" class="logo-escuela">
+    <h1>CECYCO</h1>
+  </div>
+
+  <nav>
+    <a href="{{ url_for('index') }}">INICIO</a>
+    <a href="{{ url_for('importancia') }}">IMPORTANCIA</a>
+    <a href="{{ url_for('maneras') }}">MANERAS DE RECICLAR</a>
+    <a href="{{ url_for('beneficios') }}">BENEFICIOS</a>
+    <a href="{{ url_for('centros') }}">CENTROS</a>
+    <a href="{{ url_for('educacion') }}">EDUCACIÓN</a>
+    <a href="{{ url_for('tecnologia') }}">TECNOLOGÍA</a>
+    <a href="{{ url_for('impacto') }}">IMPACTO</a>
+    <a href="{{ url_for('proyectos') }}">PROYECTOS</a>
+    <a href="{{ url_for('extra') }}">EXTRA</a>
+    <a href="{{ url_for('catalogo') }}">CATÁLOGO DE MATERIALES</a>
+    <a href="#comentarios-section">COMENTARIOS</a>
+  </nav>
+</aside>
+
+<video autoplay muted loop id="fondo_video">
+  <source src="{{ url_for('static', filename='video/PruebaDeVideo1.mp4') }}" type="video/mp4">
+</video>
+
+<section class="seccion-reciclaje">
+
+  <h1 class="titulo-principal">La Importancia del Reciclaje</h1>
+  <p class="introduccion">
+    El reciclaje es una acción esencial que conecta nuestras decisiones diarias con resultados
+    positivos para el medio ambiente. Más que una práctica ecológica, es un compromiso que permite
+    proteger recursos, reducir contaminación y construir comunidades más saludables.
+  </p>
+
+  <!-- SUBTEMA 1 -->
+  <div class="bloque">
+    <h2>🌱 1. ¿Por qué el reciclaje es crucial?</h2>
+    <p>
+      El reciclaje permite que materiales ya utilizados regresen al ciclo productivo, evitando la
+      extracción innecesaria de recursos naturales vírgenes y disminuyendo el daño ambiental.
+      En México, cada persona genera cerca de <strong>1 kg de basura al día</strong>, lo que equivale a
+      unos <strong>42 millones de toneladas anuales</strong>. Sin embargo, únicamente
+      <strong>6.1% de los residuos se reciclan</strong>, lo que refleja una enorme oportunidad de mejora.
+    </p>
+    <p>
+      Los beneficios son claros: reciclar <strong>1 kg de papel</strong> puede salvar hasta
+      <strong>17 árboles</strong>, mientras que reciclar <strong>1 tonelada de plástico</strong> evita la
+      emisión de aproximadamente <strong>2 toneladas de CO₂</strong>. Como afirma Jordi Pon (PNUMA),
+      el reciclaje da una “segunda oportunidad” a los materiales, reduciendo la presión sobre los
+      ecosistemas y mejorando el equilibrio ambiental.
+    </p>
+  </div>
+
+  <!-- SUBTEMA 2 -->
+  <div class="bloque">
+    <h2>♻️ 2. Reciclar como acción individual de impacto colectivo</h2>
+    <p>
+      Durante los últimos años, ha aumentado la conciencia sobre el papel de cada persona en la lucha
+      contra el cambio climático. Pequeñas acciones como separar los residuos, reutilizar envases o
+      reducir el consumo de plásticos de un solo uso tienen un impacto significativo cuando se suman
+      millones de voluntades.
+    </p>
+    <p>
+      Reciclar no solo protege el entorno; también promueve hábitos responsables, impulsa la economía
+      circular y transforma la forma en que las comunidades se relacionan con sus desechos.
+    </p>
+  </div>
+
+  <!-- SUBTEMA 3 -->
+  <div class="bloque">
+    <h2>🏙️ 3. Reciclaje y ciudades sostenibles</h2>
+    <p>
+      En diversas ciudades del mundo se ha comprobado que incrementar las tasas de reciclaje reduce
+      los costos de limpieza urbana, mejora la calidad del aire y disminuye enfermedades derivadas de
+      la mala gestión de residuos. Esto demuestra que reciclar es un pilar fundamental para construir
+      ciudades más eficientes, limpias y saludables.
+    </p>
+    <p>
+      La correcta gestión de residuos también reduce desigualdades, pues proporciona mejores servicios
+      de saneamiento, especialmente en zonas vulnerables donde la basura suele acumularse
+      peligrosamente.
+    </p>
+  </div>
+
+  <!-- SUBTEMA 4 -->
+  <div class="bloque">
+    <h2>🌍 4. Hacia una sociedad más sostenible</h2>
+    <p>
+      La importancia del reciclaje va más allá de un acto aislado: fomenta un modelo social más justo,
+      responsable y consciente. Adoptar estas prácticas ayuda a proteger ecosistemas, combatir el
+      cambio climático y asegurar un futuro más sostenible para las próximas generaciones.
+    </p>
+  </div>
+
+</section>
+
+
+<style>
+  .seccion-reciclaje {
+    width: 90%;
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 40px;
+    border-radius: 18px;
+    background: linear-gradient(135deg, #4a0f39, #6f2d85, #3b3fa8);
+    color: #fff;
+    font-family: "Segoe UI", Arial, sans-serif;
+    line-height: 1.7;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.35);
+  }
+
+  .titulo-principal {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 34px;
+    font-weight: 800;
+  }
+
+  .introduccion {
+    text-align: center;
+    margin-bottom: 35px;
+    font-size: 18px;
+    opacity: 0.95;
+  }
+
+  .bloque {
+    background: rgba(255,255,255,0.08);
+    padding: 25px 20px;
+    border-radius: 14px;
+    margin-bottom: 25px;
+    backdrop-filter: blur(4px);
+  }
+
+  .bloque h2 {
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-weight: 700;
+  }
+
+  .bloque p {
+    margin-bottom: 12px;
+    font-size: 16px;
+  }
+</style>
+
+
+</div>
+<script src="static/js/main.js"></script>
+</body>
+</html>

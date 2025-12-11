@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="{{ url_for('static', filename='images/loguito.png') }}">
+  <title>CECYCO | Maneras de Reciclaje</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <script defer src="{{ url_for('static', filename='JS/script.js') }}"></script>
+</head>
+
+<body>
+
+<!-- BOTÓN HAMBURGUESA -->
+<button class="hamburguesa" id="open-menu">☰</button>
+
+<!-- MENÚ LATERAL DESPLEGABLE -->
+<aside class="menu-lateral" id="menu">
+  <button class="cerrar" id="close-menu">✕</button>
+
+  <div class="logos">
+    <img src="{{ url_for('static', filename='images/loguito.png') }}" alt="Logo Escuela" class="logo-escuela">
+    <h1>CECYCO</h1>
+  </div>
+
+  <nav>
+    <a href="{{ url_for('index') }}">INICIO</a>
+    <a href="{{ url_for('importancia') }}">IMPORTANCIA</a>
+    <a href="{{ url_for('maneras') }}">MANERAS DE RECICLAR</a>
+    <a href="{{ url_for('beneficios') }}">BENEFICIOS</a>
+    <a href="{{ url_for('centros') }}">CENTROS</a>
+    <a href="{{ url_for('educacion') }}">EDUCACIÓN</a>
+    <a href="{{ url_for('tecnologia') }}">TECNOLOGÍA</a>
+    <a href="{{ url_for('impacto') }}">IMPACTO</a>
+    <a href="{{ url_for('proyectos') }}">PROYECTOS</a>
+    <a href="{{ url_for('extra') }}">EXTRA</a>
+    <a href="{{ url_for('catalogo') }}">CATÁLOGO DE MATERIALES</a>
+    <a href="#comentarios-section">COMENTARIOS</a>
+  </nav>
+</aside>
+
+<video autoplay muted loop id="fondo_video">
+  <source src="{{ url_for('static', filename='video/PruebaDeVideo1.mp4') }}" type="video/mp4">
+</video>
+
+<section class="seccion-estrategias">
+
+  <h1 class="titulo-principal">Maneras de Reciclaje</h1>
+  <p class="introduccion">
+    Existen diversas prácticas que facilitan el reciclaje tanto en casa como a nivel industrial.
+    Aplicarlas de forma constante permite disminuir residuos, aprovechar materiales y reducir
+    el impacto ambiental generado por nuestra vida diaria.
+  </p>
+
+  <!-- SUBTEMA 1 -->
+  <div class="bloque">
+    <h2>🗂️ 1. Separación en origen</h2>
+    <p>
+      El primer paso para reciclar correctamente es clasificar los residuos desde el momento
+      en que se generan. Esta separación permite una recolección más eficiente y evita que los
+      materiales reciclables se contaminen.
+    </p>
+    <p>
+      En muchos países, incluida México, se utilizan contenedores de colores:
+      <strong>azul</strong> para papel/cartón,
+      <strong>amarillo</strong> para plástico y latas,
+      <strong>verde</strong> para vidrio
+      y <strong>gris</strong> o <strong>negro</strong> para desechos no reciclables.
+    </p>
+    <p>
+      Esta clasificación facilita el procesamiento en plantas de reciclaje y centros de acopio,
+      donde los materiales se preparan para su reutilización.
+    </p>
+  </div>
+
+  <!-- SUBTEMA 2 -->
+  <div class="bloque">
+    <h2>🏭 2. Reciclaje mecánico y químico</h2>
+    <p>
+      Los materiales reciclables pueden reprocesarse de diferentes formas según el tipo de
+      residuo y su estado. Existen tres modalidades principales:
+    </p>
+    <ul>
+      <li><strong>Reciclaje primario (circuito cerrado):</strong> convierte un material en el mismo producto, por ejemplo, papel → papel.</li>
+      <li><strong>Reciclaje secundario:</strong> transforma un material en otro producto diferente, como papel triturado → papel prensa.</li>
+      <li><strong>Reciclaje terciario (químico):</strong> descompone residuos para obtener nuevas materias primas.</li>
+    </ul>
+    <p>
+      Estos procesos reducen la necesidad de extraer materiales vírgenes y ayudan a disminuir
+      la contaminación industrial.
+    </p>
+  </div>
+
+  <!-- SUBTEMA 3 -->
+  <div class="bloque">
+    <h2>🔄 3. Reducción y reutilización (Las 3R)</h2>
+    <p>
+      Antes de reciclar, es fundamental poner en práctica las <strong>3R:</strong>
+      <strong>reducir, reutilizar y reciclar</strong>. Esta estrategia maximiza el impacto positivo
+      sobre el ambiente, ya que evita que los residuos se generen en primer lugar.
+    </p>
+    <p>
+      Reducir implica comprar lo necesario, mientras que reutilizar consiste en prolongar
+      la vida útil de productos como ropa, envases, muebles o aparatos electrónicos.
+      La EPA señala que aplicar las 3R juntas aumenta significativamente el ahorro de energía
+      y materias primas.
+    </p>
+  </div>
+
+  <!-- SUBTEMA 4 -->
+  <div class="bloque">
+    <h2>🌿 4. Compostaje y donación</h2>
+    <p>
+      Los residuos orgánicos pueden convertirse en abono mediante compostaje, cerrando un ciclo
+      natural donde la materia vuelve a la tierra como nutriente. Esta práctica reduce la basura
+      enviada a rellenos sanitarios y mejora la calidad del suelo.
+    </p>
+    <p>
+      Objetos como libros, juguetes o muebles pueden donarse o revenderse, extendiendo su vida útil
+      y evitando la generación innecesaria de desechos.
+    </p>
+  </div>
+
+  <!-- SUBTEMA 5 -->
+  <div class="bloque">
+    <h2>🏘️ 5. Centros especializados y puntos limpios</h2>
+    <p>
+      Algunos materiales requieren tratamiento especial, como electrónicos, pilas, aceite usado,
+      medicamentos o neumáticos. Estos deben llevarse a centros autorizados donde se manejan
+      adecuadamente para evitar riesgos a la salud y al ambiente.
+    </p>
+    <p>
+      En estos centros, los residuos se clasifican y preparan para convertirse nuevamente
+      en materia prima, evitando que terminen en vertederos.
+    </p>
+  </div>
+
+  <!-- SUBTEMA 6 -->
+  <div class="bloque">
+    <h2>🎨 6. Reciclaje creativo y upcycling</h2>
+    <p>
+      El reciclaje creativo o <strong>upcycling</strong> da una nueva vida a objetos que parecen inútiles,
+      transformándolos en productos de mayor valor. Desde muebles hechos con pallets hasta
+      accesorios elaborados con plástico reciclado, estas iniciativas reducen residuos y fomentan
+      la creatividad.
+    </p>
+    <p>
+      Estas alternativas son especialmente útiles para familias, escuelas, talleres comunitarios
+      y pequeños emprendimientos que desean aportar a la sostenibilidad de manera original y económica.
+    </p>
+  </div>
+
+</section>
+
+<style>
+  .seccion-estrategias {
+    width: 90%;
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 40px;
+    border-radius: 18px;
+    background: linear-gradient(135deg, #4a0f39, #6f2d85, #3b3fa8);
+    color: #fff;
+    font-family: "Segoe UI", Arial, sans-serif;
+    line-height: 1.7;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.35);
+  }
+
+  .titulo-principal {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 32px;
+    font-weight: 800;
+  }
+
+  .introduccion {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 18px;
+    opacity: 0.95;
+  }
+
+  .bloque {
+    background: rgba(255,255,255,0.08);
+    padding: 25px 20px;
+    border-radius: 14px;
+    margin-bottom: 25px;
+    backdrop-filter: blur(4px);
+  }
+
+  .bloque h2 {
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-weight: 700;
+  }
+
+  .bloque p, 
+  .bloque ul li {
+    margin-bottom: 12px;
+    font-size: 16px;
+  }
+
+  ul {
+    padding-left: 20px;
+  }
+</style>
+
+</body>
+</html>

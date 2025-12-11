@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="{{ url_for('static', filename='images/loguito.png') }}">
+  <title>CECYCO | Impactos del Reciclaje</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <script defer src="{{ url_for('static', filename='JS/script.js') }}"></script>
+</head>
+
+<body>
+
+<!-- BOTÓN HAMBURGUESA -->
+<button class="hamburguesa" id="open-menu">☰</button>
+
+<!-- MENÚ LATERAL DESPLEGABLE -->
+<aside class="menu-lateral" id="menu">
+  <button class="cerrar" id="close-menu">✕</button>
+
+  <div class="logos">
+    <img src="{{ url_for('static', filename='images/loguito.png') }}" alt="Logo Escuela" class="logo-escuela">
+    <h1>CECYCO</h1>
+  </div>
+
+  <nav>
+    <a href="{{ url_for('index') }}">INICIO</a>
+    <a href="{{ url_for('importancia') }}">IMPORTANCIA</a>
+    <a href="{{ url_for('maneras') }}">MANERAS DE RECICLAR</a>
+    <a href="{{ url_for('beneficios') }}">BENEFICIOS</a>
+    <a href="{{ url_for('centros') }}">CENTROS</a>
+    <a href="{{ url_for('educacion') }}">EDUCACIÓN</a>
+    <a href="{{ url_for('tecnologia') }}">TECNOLOGÍA</a>
+    <a href="{{ url_for('impacto') }}">IMPACTO</a>
+    <a href="{{ url_for('proyectos') }}">PROYECTOS</a>
+    <a href="{{ url_for('extra') }}">EXTRA</a>
+    <a href="{{ url_for('catalogo') }}">CATÁLOGO DE MATERIALES</a>
+    <a href="#comentarios-section">COMENTARIOS</a>
+  </nav>
+</aside>
+
+<video autoplay muted loop id="fondo_video">
+  <source src="{{ url_for('static', filename='video/PruebaDeVideo1.mp4') }}" type="video/mp4">
+</video>
+
+<section class="seccion-impactos">
+
+  <h1 class="titulo-principal">Impactos del Reciclaje</h1>
+  <p class="introduccion">
+    El reciclaje genera efectos profundos en el medio ambiente, la economía y la salud pública. 
+    A través de estas prácticas, se reduce la contaminación, se impulsa la economía circular y 
+    se mejoran las condiciones de vida en las comunidades.
+  </p>
+
+  <!-- SUBTEMA 1 -->
+  <div class="bloque">
+    <h2>🌎 1. Impactos ambientales</h2>
+    <p>
+      El reciclaje disminuye la acumulación de residuos en basureros y reduce la liberación de 
+      contaminantes en suelos, ríos y mares. Gracias a esto, se protege la biodiversidad y se evita 
+      que toneladas de desechos afecten ecosistemas naturales.
+    </p>
+    <p>
+      Además, reduce la emisión de gases de efecto invernadero, ya que menos materiales deben ser 
+      producidos desde cero, lo que disminuye el gasto energético y la explotación de recursos.
+    </p>
+  </div>
+
+  <!-- SUBTEMA 2 -->
+  <div class="bloque">
+    <h2>💼 2. Impactos económicos</h2>
+    <p>
+      El reciclaje impulsa miles de empleos en recolección, clasificación, transporte y 
+      transformación de materiales. También reduce costos en la industria al usar materias primas 
+      recicladas.
+    </p>
+    <p>
+      Este proceso fortalece los modelos de <strong>economía circular</strong>, donde los residuos se 
+      convierten en productos nuevos y rentables.
+    </p>
+  </div>
+
+  <!-- SUBTEMA 3 -->
+  <div class="bloque">
+    <h2>🏥 3. Impactos en la salud pública</h2>
+    <p>
+      Reciclar reduce la presencia de tiraderos a cielo abierto, los cuales suelen ser focos de plagas 
+      y enfermedades. 
+    </p>
+    <p>
+      También disminuye la quema de basura, lo que se traduce en un aire más limpio y en una reducción 
+      de problemas respiratorios relacionados con la contaminación.
+    </p>
+  </div>
+
+  <!-- SUBTEMA 4 -->
+  <div class="bloque">
+    <h2>🌱 4. Beneficios para la calidad de vida</h2>
+    <p>
+      Las comunidades que reciclan más mantienen espacios públicos más limpios, con menor presencia de 
+      plagas y menor contaminación en aire y agua.
+    </p>
+    <p>
+      Esto demuestra que el reciclaje no solo beneficia al planeta, sino que también contribuye a crear 
+      entornos más seguros, saludables y agradables para vivir.
+    </p>
+  </div>
+
+</section>
+
+<style>
+  .seccion-impactos {
+    width: 90%;
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 40px;
+    border-radius: 18px;
+    background: linear-gradient(135deg, #4a0f39, #6f2d85, #3b3fa8);
+    color: #fff;
+    font-family: "Segoe UI", Arial, sans-serif;
+    line-height: 1.7;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.35);
+  }
+
+  .titulo-principal {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 32px;
+    font-weight: 800;
+  }
+
+  .introduccion {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 18px;
+    opacity: 0.95;
+  }
+
+  .bloque {
+    background: rgba(255,255,255,0.08);
+    padding: 25px 20px;
+    border-radius: 14px;
+    margin-bottom: 25px;
+    backdrop-filter: blur(4px);
+  }
+
+  .bloque h2 {
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-weight: 700;
+  }
+
+  .bloque p {
+    margin-bottom: 12px;
+    font-size: 16px;
+  }
+</style>
+
+
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="{{ url_for('static', filename='images/loguito.png') }}">
+  <title>CECYCO | Proyectos Educativos de Reciclaje</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <script defer src="{{ url_for('static', filename='JS/script.js') }}"></script>
+</head>
+
+<body>
+
+<!-- BOTÓN HAMBURGUESA -->
+<button class="hamburguesa" id="open-menu">☰</button>
+
+<!-- MENÚ LATERAL DESPLEGABLE -->
+<aside class="menu-lateral" id="menu">
+  <button class="cerrar" id="close-menu">✕</button>
+
+  <div class="logos">
+    <img src="{{ url_for('static', filename='images/loguito.png') }}" alt="Logo Escuela" class="logo-escuela">
+    <h1>CECYCO</h1>
+  </div>
+
+  <nav>
+    <a href="{{ url_for('index') }}">INICIO</a>
+    <a href="{{ url_for('importancia') }}">IMPORTANCIA</a>
+    <a href="{{ url_for('maneras') }}">MANERAS DE RECICLAR</a>
+    <a href="{{ url_for('beneficios') }}">BENEFICIOS</a>
+    <a href="{{ url_for('centros') }}">CENTROS</a>
+    <a href="{{ url_for('educacion') }}">EDUCACIÓN</a>
+    <a href="{{ url_for('tecnologia') }}">TECNOLOGÍA</a>
+    <a href="{{ url_for('impacto') }}">IMPACTO</a>
+    <a href="{{ url_for('proyectos') }}">PROYECTOS</a>
+    <a href="{{ url_for('extra') }}">EXTRA</a>
+    <a href="{{ url_for('catalogo') }}">CATÁLOGO DE MATERIALES</a>
+    <a href="#comentarios-section">COMENTARIOS</a>
+  </nav>
+</aside>
+
+<video autoplay muted loop id="fondo_video">
+  <source src="{{ url_for('static', filename='video/PruebaDeVideo1.mp4') }}" type="video/mp4">
+</video>
+
+<section class="seccion-proyectos">
+
+  <h1 class="titulo-principal">Proyectos Educativos de Reciclaje</h1>
+  <p class="introduccion">
+    Los proyectos escolares enfocados en el reciclaje buscan involucrar a estudiantes de todos los niveles 
+    mediante actividades prácticas que fortalecen la conciencia ambiental y promueven hábitos sostenibles 
+    desde edades tempranas.
+  </p>
+
+  <!-- SUBTEMA 1 -->
+  <div class="bloque">
+    <h2>♻️ 1. Campañas y recolección de materiales</h2>
+    <p>
+      Muchas instituciones implementan campañas para recolectar PET, papel, cartón, aluminio e incluso 
+      residuos electrónicos. Estas actividades ayudan a que los alumnos comprendan el valor de los residuos 
+      como recursos que pueden volver a utilizarse.
+    </p>
+    <p>
+      También se organizan concursos donde los estudiantes elaboran manualidades, inventos o proyectos 
+      creativos utilizando materiales reciclados, reforzando su imaginación y sentido ecológico.
+    </p>
+  </div>
+
+  <!-- SUBTEMA 2 -->
+  <div class="bloque">
+    <h2>🌱 2. Compostaje y programas escolares</h2>
+    <p>
+      Algunas escuelas han desarrollado programas de <strong>compostaje</strong>, donde los restos de comida se 
+      transforman en abono que se utiliza en jardines o huertos escolares. Este proceso enseña a los alumnos 
+      cómo los residuos orgánicos pueden volver a integrarse al ambiente de forma útil.
+    </p>
+    <p>
+      Otras implementan <strong>Patrullas Ambientales</strong>, equipos de estudiantes encargados de supervisar 
+      la correcta separación de residuos dentro de la institución, promoviendo responsabilidad y participación.
+    </p>
+  </div>
+
+  <!-- SUBTEMA 3 -->
+  <div class="bloque">
+    <h2>🏫 3. Colaboración con empresas y talleres educativos</h2>
+    <p>
+      Varias escuelas establecen alianzas con empresas recicladoras que brindan capacitaciones, charlas, 
+      herramientas o apoyo logístico para facilitar la recolección periódica de materiales.
+    </p>
+    <p>
+      Estos talleres permiten que los alumnos aprendan de expertos sobre economía circular, manejo adecuado 
+      de residuos y tecnologías que mejoran los procesos de reciclaje.
+    </p>
+  </div>
+
+  <!-- SUBTEMA 4 -->
+  <div class="bloque">
+    <h2>🔬 4. Ferias científicas y proyectos innovadores</h2>
+    <p>
+      En ferias escolares, concursos o exposiciones, los estudiantes presentan ideas innovadoras para reducir 
+      basura o reutilizar materiales de forma creativa. Estas iniciativas combinan ciencia, tecnología y 
+      sostenibilidad en soluciones prácticas.
+    </p>
+    <p>
+      Estas experiencias fortalecen habilidades clave como liderazgo, pensamiento crítico y trabajo en equipo, 
+      demostrando que los jóvenes son actores fundamentales en la transformación ambiental.
+    </p>
+  </div>
+
+</section>
+
+<style>
+  .seccion-proyectos {
+    width: 90%;
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 40px;
+    border-radius: 18px;
+    background: linear-gradient(135deg, #4a0f39, #6f2d85, #3b3fa8);
+    color: #fff;
+    font-family: "Segoe UI", Arial, sans-serif;
+    line-height: 1.7;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.35);
+  }
+
+  .titulo-principal {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 32px;
+    font-weight: 800;
+  }
+
+  .introduccion {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 18px;
+    opacity: 0.95;
+  }
+
+  .bloque {
+    background: rgba(255,255,255,0.08);
+    padding: 25px 20px;
+    border-radius: 14px;
+    margin-bottom: 25px;
+    backdrop-filter: blur(4px);
+  }
+
+  .bloque h2 {
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-weight: 700;
+  }
+
+  .bloque p {
+    margin-bottom: 12px;
+    font-size: 16px;
+  }
+</style>
+
+
+</body>
+</html>

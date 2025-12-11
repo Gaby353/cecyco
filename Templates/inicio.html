@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="{{ url_for('static', filename='images/loguito.png') }}">
+  <title>CECYCO | INVITADO</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <script defer src="{{ url_for('static', filename='JS/script.js') }}"></script>
+</head>
+
+<body>
+<div class="login-container">
+  <div class="wellness-card"> 
+    <div class="mindful-header"> 
+      <h1>Bienvenido Invitado</h1> 
+      <p>Solo puedes ver esta parte. Para acceder a toda la app debes iniciar sesión.</p> 
+    </div> <button class="harmony-button" onclick="window.location.href='/'"> 
+      <div class="button-earth"></div> <span class="button-text">Volver al formulario</span> 
+      <div class="button-growth"> <div class="growing-circle circle-1"></div> 
+      <div class="growing-circle circle-2"></div> <div class="growing-circle circle-3"></div> 
+    </div> 
+    <div class="button-aura"></div> 
+  </button> 
+</div> 
+</div>
+
+<video autoplay muted loop id="bg-video">
+  <source src="{{ url_for('static', filename='video/Fondito.mp4') }}" type="video/mp4">
+</video>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main class="contenido">
+
+    <!-- SECCIÓN PRINCIPAL (IMAGEN DE FONDO + VIDEO + TEXTO) -->
+    <section id="inicio" class="fondo-inicial">
+
+      <div class="contenido-fondo">
+
+        <!-- VIDEO -->
+        <div class="video-fondo">
+          <iframe
+            src="https://www.youtube.com/embed/uaI3PLmAJyM"
+            allowfullscreen>
+          </iframe>
+        </div>
+
+        <!-- TEXTO -->
+        <div class="texto-fondo">
+    <section id="introduccion" class="bloque">
+      <h2>INTRODUCCIÓN</h2>
+      <p>
+En <strong>CECYCO</strong>, la plataforma de <strong>N.O.V.A.</strong> dedicada al reciclaje y la sostenibilidad, creemos que cuidar nuestro planeta no es solo una responsabilidad, ¡es una oportunidad para transformar nuestro futuro! Aquí encontrarás información práctica sobre el reciclaje, sus beneficios, las consecuencias de no hacerlo y recursos para actuar de manera efectiva en tu comunidad.
+      </p>
+
+      <p>
+Reciclar permite ahorrar energía, reducir la contaminación, conservar recursos naturales y proteger la fauna y flora. Además, fomenta la economía circular y genera conciencia ambiental, enseñando a niños y adultos que cada acción cuenta. Por el contrario, no reciclar provoca acumulación de basura, contaminación de ríos y mares, pérdida de biodiversidad y un mayor impacto negativo en el planeta.
+      </p>  
+
+        </div>
+
+      </div>
+    </section> 
+    
+        <!-- IMPORTANCIA -->
+    <section id="importancia" class="bloque">
+      <h2>IMPORTANCIA DEL RECICLAJE</h2>
+      <ul>
+        <li>Protege los recursos naturales: Reutilizar materiales reduce la necesidad de talar árboles, extraer minerales o usar petróleo, ayudando a que la naturaleza se mantenga más saludable.</li>
+        <li>Ahorra energía: Fabricar productos con materiales reciclados consume menos energía que hacerlos desde cero. Por ejemplo, reciclar aluminio puede ahorrar hasta un 95% de energía.</li>
+        <li>Disminuye la contaminación: Menos basura en calles, ríos y océanos significa menos químicos tóxicos y menos daño a animales y plantas.</li>
+        <li>Reduce los residuos: Al reciclar, los rellenos sanitarios duran más y se evita que se acumulen montañas de basura.</li>
+        <li>Fomenta la economía circular: Se generan empleos y negocios sostenibles que recolectan, procesan y transforman materiales reciclables.</li>
+        <li>Conciencia ambiental: Reciclar nos enseña a ser responsables con nuestro consumo y nos recuerda que cada acción cuenta.</li>
+      </ul>
+    </section>
+
+    <!-- MANERAS DE RECICLAR -->
+    <section id="maneras" class="bloque">
+      <h2>MANERAS DE RECICLAR</h2>
+      <ul>
+        <li>REUTILIZAR ANTES DE DESECHAR
+          <ul>
+            <li>Antes de tirar algo, pregúntate: ¿Puedo usarlo de nuevo?</li>
+            <li>¿Puedo transformarlo en algo útil?</li>
+            <li>Ejemplos: frascos de vidrio como portaobjetos o cajas de cartón como organizadores.</li>
+          </ul>
+        </li>
+        <li>COMPOSTAJE
+          <ul>
+            <li>Los restos de comida y residuos orgánicos pueden convertirse en abono natural. Esto reduce la basura y ayuda a fertilizar plantas sin químicos.</li>
+          </ul>
+        </li>
+        <li>RECICLAR ELECTRÓNICAMENTE
+          <ul>
+            <li>Electrónicos viejos, como celulares o baterías, contienen materiales valiosos. Llévalos a centros de acopio para que se reciclen correctamente y no contaminen.</li>
+          </ul>
+        </li>
+        <li>REDUCIR EL CONSUMO
+          <ul>
+            <li>La mejor manera de reciclar es usar menos. Menos plástico, menos papel, menos desechables: ¡cada elección cuenta!</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <!-- BENEFICIOS -->
+    <section id="beneficios" class="bloque">
+      <h2>BENEFICIOS</h2>
+      <ul>
+        <li><strong>Protege los recursos naturales:</strong> Reciclar papel, plástico, vidrio y metales disminuye la extracción de materias primas, ayudando a conservar bosques, ríos y minerales.</li>
+        <li><strong>Ahorra energía:</strong> Producir artículos a partir de materiales reciclados consume mucha menos energía que fabricarlos desde cero. Por ejemplo, reciclar aluminio ahorra hasta un 95% de energía.</li>
+        <li><strong>Disminuye la contaminación:</strong> Al separar y reciclar residuos, evitamos que químicos y basura lleguen a ríos, mares y suelos, protegiendo la salud de personas, animales y ecosistemas.</li>
+        <li><strong>Reduce la cantidad de basura:</strong> Menos desperdicio significa menos rellenos sanitarios y vertederos saturados, prolongando su vida útil y evitando problemas de acumulación y mal olor.</li>
+        <li><strong>Fomenta la economía circular:</strong> El reciclaje genera empleos en la recolección, clasificación y transformación de materiales, creando oportunidades sostenibles y fomentando negocios verdes.</li>
+        <li><strong>Conciencia ambiental:</strong> Reciclar nos educa para ser más responsables con el consumo diario y nos recuerda que cada acción pequeña tiene un impacto positivo en el planeta.</li>
+        <li><strong>Protege la fauna y flora:</strong> Menos residuos y químicos tóxicos reducen la contaminación de hábitats naturales, evitando daños a animales y plantas.</li>
+        <li><strong>Promueve hábitos sostenibles:</strong> Al integrar el reciclaje en nuestra rutina, fomentamos un estilo de vida más consciente y respetuoso con el medio ambiente.</li>
+      </ul>
+        Además, contribuye a la formación de ciudadanos conscientes, críticos y comprometidos con el planeta.
+      </p>
+    </section>
+
+    <!-- CENTROS -->
+     <section id="centros" class="bloque">
+      <h2>CENTROS DE RECICLAJE</h2>
+      <ul>
+  <li>
+    <strong>Recycling Center</strong><br>
+    Dirección: Camino Ejidal Manzana 018, San Vicente Chicoloapan de Juárez Centro, Chimalhuacán, Méx.<br>
+    Teléfono: No disponible<br>
+    Tip: Ideal para llevar distintos residuos reciclables. Llama antes para confirmar qué materiales aceptan.
+  </li>
+  <li>
+    <strong>Reciclaje la Unión</strong><br>
+    Dirección: Cda. de Unión 50, San Pablo, Chimalhuacán, 56334, Méx.<br>
+    Teléfono: No disponible<br>
+    Tip: Lleva tus materiales separados (vidrio, plástico, papel) para agilizar el proceso.
+  </li>
+  <li>
+    <strong>Centro de Acopio Unión</strong><br>
+    Dirección: Av. Organización Popular Mz 37 Lt 4, Talladores, 56366, Chimalhuacán, Méx.<br>
+    Teléfono: +52 55 5044 2721<br>
+    Tip: Pregunta si ofrecen incentivos por separar bien tus residuos.
+  </li>
+</ul>
+        En México, existen múltiples puntos de acopio de papel, plástico, vidrio y metal, que buscan reducir la huella ecológica en las comunidades.
+      </p>
+    </section>
+
+    <!-- EDUCACIÓN -->
+    <section id="educacion" class="bloque">
+      <h2>EDUCACIÓN AMBIENTAL</h2>
+      <p>
+La <strong>educación ambiental</strong> es fundamental para crear conciencia sobre la importancia de cuidar nuestro planeta. No solo se trata de aprender a reciclar o ahorrar energía, sino de entender cómo nuestras decisiones diarias afectan a la naturaleza y a la sociedad. Una buena educación ambiental nos ayuda a actuar de manera responsable y sostenible, fomentando cambios que benefician a todos.
+</p>
+
+<p>
+A través de la educación ambiental, podemos:
+</p>
+
+<ul>
+  <li><strong>Comprender el impacto de nuestras acciones:</strong> Desde el consumo de recursos hasta la generación de residuos, aprendemos cómo nuestras decisiones afectan la tierra, el agua, el aire y la biodiversidad.</li>
+  <li><strong>Adoptar hábitos sostenibles:</strong> Reducir, reutilizar, reciclar, ahorrar energía y agua se vuelve parte de nuestra rutina diaria, protegiendo el planeta.</li>
+  <li><strong>Proteger la biodiversidad:</strong> Conocer sobre ecosistemas, especies y hábitats nos motiva a cuidar a animales, plantas y la flora local.</li>
+  <li><strong>Participar en la comunidad:</strong> Nos volvemos ciudadanos activos, apoyando proyectos de limpieza, reforestación, reciclaje y conservación ambiental en nuestra localidad.</li>
+  <li><strong>Promover la economía circular:</strong> La educación ambiental fomenta la reutilización de materiales y la creación de soluciones sostenibles, generando empleo y desarrollo responsable.</li>
+  <li><strong>Preparar a futuras generaciones:</strong> Niños y jóvenes aprenden desde temprana edad la importancia de cuidar el planeta, formando ciudadanos responsables y conscientes.</li>
+  <li><strong>Tomar decisiones informadas:</strong> Comprender el impacto ambiental de productos, servicios y hábitos nos permite elegir opciones más sostenibles.</li>
+  <li><strong>Fomentar la innovación:</strong> La educación ambiental incentiva la creatividad para encontrar soluciones prácticas a problemas como la contaminación y el desperdicio.</li>
+</ul>
+
+<p>
+En <strong>CECYCO</strong>, promovemos la educación ambiental como una herramienta clave para transformar la sociedad. Cada acción que aprendemos y aplicamos puede generar un efecto positivo en nuestra comunidad y en el planeta. La educación ambiental no es solo teoría: es práctica, acción y conciencia diaria.
+</p>
+    </section>
+
+    <!-- TECNOLOGÍA -->
+    <section id="tecnologia" class="bloque">
+      <h2>INNOVACIÓN Y TECNOLOGÍA</h2>
+      <p>
+La <strong>innovación y la tecnología</strong> son herramientas clave para mejorar la forma en que cuidamos nuestro planeta. Gracias a ellas, podemos desarrollar soluciones más eficientes para reducir residuos, reciclar materiales y proteger los recursos naturales.
+</p>
+
+<p>
+Algunas formas en que la innovación y la tecnología ayudan al medio ambiente incluyen:
+</p>
+
+<ul>
+  <li><strong>Procesos de reciclaje más eficientes:</strong> Máquinas avanzadas permiten clasificar y procesar plásticos, metales, vidrio y papel con mayor rapidez y menor desperdicio.</li>
+  <li><strong>Reciclaje de electrónicos:</strong> Tecnologías especializadas extraen materiales valiosos de celulares, baterías y otros dispositivos, evitando que contaminen y generando nuevos recursos.</li>
+  <li><strong>Aplicaciones y plataformas digitales:</strong> Apps y sitios web informan a las personas sobre cómo reciclar correctamente, ubican centros de reciclaje y promueven hábitos sostenibles.</li>
+  <li><strong>Monitoreo ambiental:</strong> Sensores y drones ayudan a detectar contaminación, medir calidad del aire y agua, y supervisar áreas verdes y residuos en ciudades.</li>
+  <li><strong>Economía circular impulsada por la innovación:</strong> Nuevos materiales biodegradables, envases reutilizables y técnicas de producción sostenible reducen el impacto ambiental.</li>
+  <li><strong>Educación tecnológica ambiental:</strong> Programas y cursos digitales enseñan a niños, jóvenes y adultos cómo usar la tecnología para proteger el planeta.</li>
+  <li><strong>Investigación e innovación verde:</strong> Laboratorios y empresas desarrollan soluciones innovadoras para tratar residuos, limpiar ecosistemas y crear productos sostenibles.</li>
+</ul>
+
+<p>
+En <strong>CECYCO</strong>, creemos que combinar innovación, tecnología y conciencia ambiental es la clave para un futuro sostenible. Cada avance tecnológico que aplicamos al reciclaje y la conservación permite cuidar mejor nuestro planeta y crear un mundo más limpio y responsable.
+</p>
+      <p>
+        Desde el desarrollo de bioplásticos hasta la digitalización de campañas ecológicas, la innovación impulsa el cambio verde.
+      </p>
+    </section>
+
+    <!-- IMPACTO -->
+    <section id="impacto" class="bloque">
+      <h2>IMPACTO GLOBAL</h2>
+      <p>
+El reciclaje y la conciencia ambiental no solo afectan nuestra comunidad, sino que generan un <strong>impacto global</strong>. Cada acción sostenible ayuda a reducir la contaminación, conservar recursos y proteger ecosistemas en todo el mundo.
+</p>
+
+<p>
+Algunos efectos del reciclaje a nivel global incluyen:
+</p>
+
+<ul>
+  <li><strong>Reducción de gases de efecto invernadero:</strong> Al disminuir la producción de nuevos materiales y la acumulación de basura, se reducen emisiones que contribuyen al cambio climático.</li>
+  <li><strong>Protección de océanos y biodiversidad:</strong> Menos residuos en ríos y mares significa menos contaminación que amenaza la vida marina y los ecosistemas alrededor del planeta.</li>
+  <li><strong>Economía sostenible:</strong> La reutilización de materiales impulsa la economía circular a nivel mundial, generando empleo y reduciendo la dependencia de recursos naturales no renovables.</li>
+  <li><strong>Conciencia y cooperación internacional:</strong> Países, comunidades y empresas trabajan juntos en programas de reciclaje y conservación para enfrentar problemas ambientales globales.</li>
+  <li><strong>Mitigación de la contaminación:</strong> Reducir, reciclar y reutilizar ayuda a controlar la contaminación del aire, agua y suelo en ciudades y regiones de todo el mundo.</li>
+  <li><strong>Innovación ambiental global:</strong> La investigación y desarrollo de tecnologías verdes, materiales biodegradables y energías limpias tiene un efecto positivo en el planeta entero.</li>
+</ul>
+
+<p>
+En <strong>CECYCO</strong>, entendemos que nuestras acciones locales tienen repercusiones globales. Cada botella reciclada, cada residuo separado y cada hábito sostenible contribuye a un mundo más limpio, saludable y consciente.
+</p>
+      <p>
+        Cada país debe adoptar medidas que garanticen un manejo sustentable de los residuos para enfrentar la crisis ambiental global.
+      </p>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section id="proyectos" class="bloque">
+      <h2>PROYECTOS ESCOLARES</h2>
+      <p>
+Los <strong>proyectos escolares</strong> son una forma práctica de enseñar a los niños y jóvenes la importancia del reciclaje y la conciencia ambiental. A través de actividades creativas y educativas, los estudiantes aprenden a cuidar el planeta y a adoptar hábitos sostenibles desde temprana edad.
+</p>
+
+<p>
+Algunos ejemplos de proyectos escolares incluyen:
+</p>
+
+<ul>
+  <li><strong>Creación de huertos escolares:</strong> Plantar frutas, verduras y flores enseña a los alumnos sobre el ciclo de la vida, el compostaje y la importancia de los recursos naturales.</li>
+  <li><strong>Campañas de reciclaje:</strong> Organizar la recolección de papel, plástico y otros materiales dentro de la escuela fomenta la responsabilidad y el trabajo en equipo.</li>
+  <li><strong>Arte con materiales reciclados:</strong> Los estudiantes pueden crear manualidades, esculturas o decoraciones usando objetos que normalmente se desecharían, aprendiendo a reutilizar.</li>
+  <li><strong>Proyectos de concientización:</strong> Crear carteles, videos o presentaciones sobre contaminación y sostenibilidad ayuda a difundir información y motivar a la comunidad escolar.</li>
+  <li><strong>Programas de ahorro energético y agua:</strong> Medir y reducir el consumo de electricidad y agua dentro de la escuela enseña hábitos responsables y sostenibles.</li>
+  <li><strong>Investigación y experimentos:</strong> Proyectos que estudien el impacto de residuos, contaminación o soluciones sostenibles desarrollan pensamiento crítico y científico en los estudiantes.</li>
+</ul>
+
+<p>
+En <strong>CECYCO</strong>, fomentamos que los proyectos escolares sean *prácticos, educativos y divertidos*, motivando a los estudiantes a convertirse en agentes de cambio que cuidan su entorno y construyen un futuro más sostenible.
+</p>
+      <p>
+        CECYCO impulsa el aprendizaje activo mediante la práctica directa, fomentando la creatividad y la responsabilidad ambiental.
+      </p>
+    </section>
+
+    <!-- EXTRA -->
+    <section id="extra" class="bloque">
+      <h2>INFORMACIÓN EXTRA</h2>
+      <p>
+En esta sección encontrarás datos curiosos, consejos prácticos y recomendaciones para hacer del reciclaje y la sostenibilidad un hábito diario. Cada pequeño cambio cuenta para cuidar nuestro planeta.
+</p>
+
+<ul>
+  <li><strong>Curiosidad:</strong> Reciclar una sola botella de plástico puede ahorrar suficiente energía para mantener encendida una bombilla de 60W durante 6 horas.</li>
+  <li><strong>Datos globales:</strong> Cada año se producen más de 300 millones de toneladas de plástico, pero solo un pequeño porcentaje se recicla correctamente. ¡Cada acción cuenta!</li>
+  <li><strong>Tips prácticos:</strong> Lava y seca los envases antes de reciclarlos, separa correctamente los materiales y evita mezclar residuos orgánicos con reciclables.</li>
+  <li><strong>Materiales reciclables comunes:</strong> Papel, cartón, vidrio, aluminio, acero y algunos plásticos (como PET y HDPE) son los más fáciles de reciclar.</li>
+  <li><strong>Materiales peligrosos:</strong> Baterías, electrónicos, pilas y químicos nunca deben tirarse a la basura común. Deben llevarse a centros de acopio especializados.</li>
+  <li><strong>Beneficios extra:</strong> Reciclar no solo protege el medio ambiente, también genera empleo, reduce la contaminación y fomenta la economía circular.</li>
+  <li><strong>Consejo ecológico diario:</strong> Evita productos desechables, reutiliza bolsas y frascos, y motiva a tu familia y amigos a reciclar.</li>
+  <li><strong>Inspiración:</strong> Cada acción ambiental que realices se multiplica: enseñar a otros sobre reciclaje crea un efecto positivo en tu comunidad y más allá.</li>
+</ul>
+
+<p>
+En <strong>CECYCO</strong> queremos que esta información extra te motive a *convertir el reciclaje en un hábito divertido y consciente*. ¡Recuerda que cada acción cuenta y que juntos podemos hacer un cambio real!
+</p>
+    </section>
+
+    <section id="catalogo" class="bloque">
+    <h2>Materiales que se reciclan</h2>
+
+    <!-- PLÁSTICO -->
+    <div class="item">
+        <img src="{{ url_for('static', filename='images/prueba1.png') }}" alt="Botellas">
+
+        <div class="texto">
+            <h3>Plástico</h3>
+            <p class="resumen">El plástico reciclado se transforma en botellas, fibras y empaques nuevos.</p>
+            <button class="btn-info" onclick="toggleInfo(this)">Más información</button>
+            <p class="info-oculta">
+                Separar por tipo (PET, HDPE, PVC) mejora el reciclaje y reduce los residuos en océanos.
+            </p>
+        </div>
+    </div>
+
+    <!-- PAPEL -->
+    <div class="item">
+        <img src="https://cdn.pixabay.com/photo/2016/03/31/19/56/newspaper-1295816_1280.jpg" alt="Papel reciclable">
+        <div class="texto">
+            <h3>Papel</h3>
+            <p class="resumen">Reciclar papel reduce la tala de árboles y el consumo de agua.</p>
+            <button class="btn-info" onclick="toggleInfo(this)">Más información</button>
+            <p class="info-oculta">
+                Se reciclan hojas, cuadernos, cajas y periódicos. Evita mojarlo o mezclarlo con aceite.
+            </p>
+        </div>
+    </div>
+
+    <h2>Materiales que se reutilizan</h2>
+
+    <!-- VIDRIO -->
+    <div class="item">
+        <img src="https://cdn.pixabay.com/photo/2017/06/22/19/35/jar-2433413_1280.jpg" alt="Frascos de vidrio">
+        <div class="texto">
+            <h3>Vidrio</h3>
+            <p class="resumen">Los frascos de vidrio pueden reutilizarse muchas veces sin perder calidad.</p>
+            <button class="btn-info" onclick="toggleInfo(this)">Más información</button>
+            <p class="info-oculta">
+                Úsalos para almacenar comida, decorar, organizar o como macetas pequeñas.
+            </p>
+        </div>
+    </div>
+
+    <!-- ROPA -->
+    <div class="item">
+        <img src="https://cdn.pixabay.com/photo/2016/11/29/05/45/bazaar-1868885_1280.jpg" alt="Ropa reutilizable">
+        <div class="texto">
+            <h3>Ropa</h3>
+            <p class="resumen">La ropa se puede donar, reparar o transformar para darle una segunda vida.</p>
+            <button class="btn-info" onclick="toggleInfo(this)">Más información</button>
+            <p class="info-oculta">
+                Puedes convertirla en bolsas, accesorios o telas para limpieza.
+            </p>
+        </div>
+    </div>
+
+    <h2>Materiales biodegradables</h2>
+
+    <!-- ORGÁNICOS -->
+    <div class="item">
+        <img src="https://cdn.pixabay.com/photo/2017/08/02/10/08/compost-2574332_1280.jpg" alt="Composta orgánica">
+        <div class="texto">
+            <h3>Restos orgánicos</h3>
+            <p class="resumen">Se pueden convertir en composta y servir como fertilizante natural.</p>
+            <button class="btn-info" onclick="toggleInfo(this)">Más información</button>
+            <p class="info-oculta">
+                Restos de comida, hojas y cáscaras producen abono rico en nutrientes.
+            </p>
+        </div>
+    </div>
+
+    <!-- CARTÓN -->
+    <div class="item">
+        <img src="https://cdn.pixabay.com/photo/2018/02/07/20/44/cardboard-3138411_1280.jpg" alt="Cartón biodegradable">
+        <div class="texto">
+            <h3>Cartón</h3>
+            <p class="resumen">El cartón es biodegradable y también se puede reciclar o reutilizar.</p>
+            <button class="btn-info" onclick="toggleInfo(this)">Más información</button>
+            <p class="info-oculta">
+                Ideal para manualidades, envíos o proyectos escolares ecológicos.
+            </p>
+        </div>
+    </div>
+
+    <h2>Residuos Electrónicos</h2>
+
+<div class="item">
+    <img src="https://cdn.pixabay.com/photo/2016/11/21/15/46/computer-1845880_1280.jpg" alt="Electrónicos viejos">
+    <div class="texto">
+        <h3>Computadoras y Laptops</h3>
+        <p class="resumen">Los dispositivos electrónicos contienen metales valiosos que pueden recuperarse.</p>
+        <button class="btn-info" onclick="toggleInfo(this)">Más información</button>
+        <p class="info-oculta">
+            Si se reciclan correctamente, se recupera oro, cobre, aluminio y componentes reutilizables.
+        </p>
+    </div>
+</div>
+
+<div class="item">
+    <img src="https://cdn.pixabay.com/photo/2017/08/10/03/33/mobile-phone-2618710_1280.jpg" alt="Celulares viejos">
+    <div class="texto">
+        <h3>Celulares</h3>
+        <p class="resumen">Los teléfonos antiguos contienen litio y metales que deben reciclarse.</p>
+        <button class="btn-info" onclick="toggleInfo(this)">Más información</button>
+        <p class="info-oculta">
+            No deben tirarse a la basura. Llévalos a centros de acopio para evitar contaminación del suelo.
+        </p>
+    </div>
+</div>
+
+<h2>Materiales Peligrosos</h2>
+
+<div class="item">
+    <img src="https://cdn.pixabay.com/photo/2014/04/03/10/32/battery-310821_128.png" alt="Pilas">
+    <div class="texto">
+        <h3>Baterías y Pilas</h3>
+        <p class="resumen">Las pilas contienen mercurio, plomo y cadmio que contaminan ríos y suelos.</p>
+        <button class="btn-info" onclick="toggleInfo(this)">Más información</button>
+        <p class="info-oculta">
+            Nunca las tires al bote. Deposítalas en centros especializados para un tratamiento seguro.
+        </p>
+    </div>
+</div>
+
+<div class="item">
+    <img src="https://cdn.pixabay.com/photo/2014/12/15/15/34/paint-569300_1280.jpg" alt="Pinturas peligrosas">
+    <div class="texto">
+        <h3>Pinturas y Solventes</h3>
+        <p class="resumen">Son altamente tóxicos y deben manejarse con mucho cuidado.</p>
+        <button class="btn-info" onclick="toggleInfo(this)">Más información</button>
+        <p class="info-oculta">
+            Llévalos a recolectas municipales especiales para evitar daños al ambiente.
+        </p>
+    </div>
+</div>
+
+<h2>Ideas Creativas de Reutilización</h2>
+
+<div class="item">
+    <img src="https://cdn.pixabay.com/photo/2016/11/22/19/06/plant-1853863_1280.jpg" alt="Macetas reutilizadas">
+    <div class="texto">
+        <h3>Botellas como Macetas</h3>
+        <p class="resumen">Las botellas PET pueden transformarse en macetas modernas y ecológicas.</p>
+        <button class="btn-info" onclick="toggleInfo(this)">Más información</button>
+        <p class="info-oculta">
+            Solo corta una botella, agrega tierra y una planta pequeña. Perfecto para casas o escuelas.
+        </p>
+    </div>
+</div>
+
+<div class="item">
+    <img src="https://cdn.pixabay.com/photo/2015/09/02/12/27/jam-918978_1280.jpg" alt="Frascos reutilizados">
+    <div class="texto">
+        <h3>Frascos como Organizadores</h3>
+        <p class="resumen">Los frascos de vidrio son perfectos para almacenar alimentos o materiales.</p>
+        <button class="btn-info" onclick="toggleInfo(this)">Más información</button>
+        <p class="info-oculta">
+            Puedes decorarlos con pintura y cuerda para darles un toque más bonito y ecológico.
+        </p>
+    </div>
+</div>
+
+<h2>Eco-Proyectos Escolares</h2>
+
+<div class="item">
+    <img src="https://cdn.pixabay.com/photo/2016/09/15/18/16/sprout-1676629_1280.jpg" alt="Huerto escolar">
+    <div class="texto">
+        <h3>Huerto Escolar</h3>
+        <p class="resumen">Ideal para aprender sobre plantas, alimentos y compostaje.</p>
+        <button class="btn-info" onclick="toggleInfo(this)">Más información</button>
+        <p class="info-oculta">
+            Los estudiantes pueden sembrar verduras y aprender sobre agricultura sostenible.
+        </p>
+    </div>
+</div>
+
+<div class="item">
+    <img src="https://cdn.pixabay.com/photo/2016/01/19/17/17/craft-1149020_1280.jpg" alt="Manualidades recicladas">
+    <div class="texto">
+        <h3>Manualidades con Reciclaje</h3>
+        <p class="resumen">Perfecto para ferias escolares o proyectos del medio ambiente.</p>
+        <button class="btn-info" onclick="toggleInfo(this)">Más información</button>
+        <p class="info-oculta">
+            Puedes crear decoraciones, juguetes ecológicos, y obras de arte con materiales reciclados.
+        </p>
+    </div>
+</div>
+
+<h2>Energías Renovables</h2>
+
+<div class="item">
+    <img src="https://cdn.pixabay.com/photo/2019/10/10/10/58/solar-panels-4536773_1280.jpg" alt="Paneles solares">
+    <div class="texto">
+        <h3>Paneles Solares</h3>
+        <p class="resumen">Aprovechan la luz del sol para generar electricidad limpia.</p>
+        <button class="btn-info" onclick="toggleInfo(this)">Más información</button>
+        <p class="info-oculta">
+            Son ideales para escuelas sustentables y reducen el consumo de energía convencional.
+        </p>
+    </div>
+</div>
+
+<div class="item">
+    <img src="https://cdn.pixabay.com/photo/2017/08/06/10/39/windrader-2597274_1280.jpg" alt="Energía eólica">
+    <div class="texto">
+        <h3>Energía Eólica</h3>
+        <p class="resumen">Los aerogeneradores producen electricidad usando el viento.</p>
+        <button class="btn-info" onclick="toggleInfo(this)">Más información</button>
+        <p class="info-oculta">
+            Es una de las energías más limpias y eficientes del mundo.
+        </p>
+    </div>
+</div>
+
+
+</section>
+
+    <!-- SECCIÓN DE PUBLICACIONES -->
+<section id="comentarios-section" class="bloque">
+
+    <h2>Mis Publicaciones</h2>
+
+    <div class="crear-publicacion">
+        <textarea id="comentarioTexto" placeholder="Escribe algo..."></textarea>
+        <input type="file" id="imagenArchivo" accept="image/*">
+        <button onclick="publicar()">Publicar</button>
+    </div>
+
+    <h3>Mis Comentarios</h3>
+    <div id="misPublicaciones"></div>
+
+    <h3>Publicaciones de los demás</h3>
+    <div id="otrasPublicaciones"></div>
+
+</section>
+
+
+
+<!-- SECCIÓN DE CALIFICACIÓN CON HOJITAS -->
+<section class="calificacion-section">
+    <h2>Califica la página</h2>
+    <div class="hojitas" id="hojasRating">
+        <span data-value="1">🍃</span>
+        <span data-value="2">🍃</span>
+        <span data-value="3">🍃</span>
+        <span data-value="4">🍃</span>
+        <span data-value="5">🍃</span>
+    </div>
+    <p id="resultadoRating"></p>
+</section>
+
+  
+    <script src="static/js/main.js"></script>
+</main>
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="{{ url_for('static', filename='images/loguito.png') }}">
+  <title>CECYCO | El Reciclaje en la Educación</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <script defer src="{{ url_for('static', filename='JS/script.js') }}"></script>
+</head>
+
+<body>
+
+<!-- BOTÓN HAMBURGUESA -->
+<button class="hamburguesa" id="open-menu">☰</button>
+
+<!-- MENÚ LATERAL DESPLEGABLE -->
+<aside class="menu-lateral" id="menu">
+  <button class="cerrar" id="close-menu">✕</button>
+
+  <div class="logos">
+    <img src="{{ url_for('static', filename='images/loguito.png') }}" alt="Logo Escuela" class="logo-escuela">
+    <h1>CECYCO</h1>
+  </div>
+
+  <nav>
+    <a href="{{ url_for('index') }}">INICIO</a>
+    <a href="{{ url_for('importancia') }}">IMPORTANCIA</a>
+    <a href="{{ url_for('maneras') }}">MANERAS DE RECICLAR</a>
+    <a href="{{ url_for('beneficios') }}">BENEFICIOS</a>
+    <a href="{{ url_for('centros') }}">CENTROS</a>
+    <a href="{{ url_for('educacion') }}">EDUCACIÓN</a>
+    <a href="{{ url_for('tecnologia') }}">TECNOLOGÍA</a>
+    <a href="{{ url_for('impacto') }}">IMPACTO</a>
+    <a href="{{ url_for('proyectos') }}">PROYECTOS</a>
+    <a href="{{ url_for('extra') }}">EXTRA</a>
+    <a href="{{ url_for('catalogo') }}">CATÁLOGO DE MATERIALES</a>
+    <a href="#comentarios-section">COMENTARIOS</a>
+  </nav>
+</aside>
+
+<video autoplay muted loop id="fondo_video">
+  <source src="{{ url_for('static', filename='video/PruebaDeVideo1.mp4') }}" type="video/mp4">
+</video>
+
+<section class="seccion-educacion">
+
+  <h1 class="titulo-principal">El Reciclaje en la Educación</h1>
+  <p class="introduccion">
+    La educación ambiental se ha convertido en un eje clave para formar generaciones más conscientes,
+    responsables y conectadas con el cuidado del planeta. Las escuelas juegan un papel esencial al
+    integrar prácticas y programas que promueven el reciclaje desde edades tempranas.
+  </p>
+
+  <!-- SUBTEMA 1 -->
+  <div class="bloque">
+    <h2>🏫 1. Formación ambiental desde el aula</h2>
+    <p>
+      En el ámbito educativo, el reciclaje funciona como una herramienta poderosa para desarrollar una 
+      cultura ambiental duradera. Muchas instituciones han implementado programas donde los estudiantes 
+      separan sus residuos, participan en campañas de limpieza y crean proyectos de reutilización creativa. 
+      Estas actividades enseñan hábitos responsables y fortalecen valores como el respeto por el entorno.
+    </p>
+    <p>
+      La práctica constante convierte el reciclaje en un concepto que va más allá de la teoría, integrándose 
+      como parte natural de la vida escolar.
+    </p>
+  </div>
+
+  <!-- SUBTEMA 2 -->
+  <div class="bloque">
+    <h2>🌱 2. Actividades prácticas y aprendizaje vivencial</h2>
+    <p>
+      Talleres de compostaje, concursos de reciclaje, creación de huertos escolares y proyectos de arte con 
+      materiales reutilizados permiten a los alumnos ver de forma tangible cómo los residuos pueden 
+      transformarse en recursos valiosos.
+    </p>
+    <p>
+      Estas experiencias fomentan la creatividad, el trabajo en equipo y una comprensión profunda del ciclo 
+      de los materiales y la importancia de manejar los desechos adecuadamente.
+    </p>
+  </div>
+
+  <!-- SUBTEMA 3 -->
+  <div class="bloque">
+    <h2>📚 3. Integración en el currículo escolar</h2>
+    <p>
+      La incorporación de asignaturas, contenidos o módulos relacionados con la sostenibilidad y el cuidado 
+      ambiental refuerza el aprendizaje y sensibiliza a los estudiantes sobre la problemática global de los 
+      residuos.
+    </p>
+    <p>
+      De esta forma, el reciclaje no se aprende solamente como una actividad aislada, sino como parte esencial 
+      del conocimiento necesario para enfrentar los desafíos ambientales actuales.
+    </p>
+  </div>
+
+  <!-- SUBTEMA 4 -->
+  <div class="bloque">
+    <h2>🤝 4. Apoyo institucional y programas escolares</h2>
+    <p>
+      Iniciativas como los <strong>“Puntos Verdes Escolares”</strong> o colaboraciones con organizaciones 
+      ambientales proporcionan materiales, contenedores, talleres y apoyo logístico para mejorar la gestión 
+      de residuos en las escuelas.
+    </p>
+    <p>
+      Con este tipo de programas, la educación ambiental deja de ser algo teórico para convertirse en acciones 
+      concretas dentro de la comunidad escolar.
+    </p>
+  </div>
+
+  <!-- SUBTEMA 5 -->
+  <div class="bloque">
+    <h2>🌍 5. Un estilo de vida que trasciende la escuela</h2>
+    <p>
+      Una educación ambiental continua ayuda a los alumnos a entender que el reciclaje no es solo una actividad 
+      escolar, sino un hábito que puede incorporarse en el hogar y en la comunidad.
+    </p>
+    <p>
+      Cuando los niños adoptan estas prácticas, se genera un efecto multiplicador: influyen positivamente en sus 
+      familias, vecinos y entorno, consolidando una cultura ambiental sólida y extendida.
+    </p>
+  </div>
+
+</section>
+
+<style>
+  .seccion-educacion {
+    width: 90%;
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 40px;
+    border-radius: 18px;
+    background: linear-gradient(135deg, #4a0f39, #6f2d85, #3b3fa8);
+    color: #fff;
+    font-family: "Segoe UI", Arial, sans-serif;
+    line-height: 1.7;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.35);
+  }
+
+  .titulo-principal {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 32px;
+    font-weight: 800;
+  }
+
+  .introduccion {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 18px;
+    opacity: 0.95;
+  }
+
+  .bloque {
+    background: rgba(255,255,255,0.08);
+    padding: 25px 20px;
+    border-radius: 14px;
+    margin-bottom: 25px;
+    backdrop-filter: blur(4px);
+  }
+
+  .bloque h2 {
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-weight: 700;
+  }
+
+  .bloque p {
+    margin-bottom: 12px;
+    font-size: 16px;
+  }
+</style>
+
+</body>
+</html>

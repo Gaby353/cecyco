@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="{{ url_for('static', filename='images/loguito.png') }}">
+  <title>CECYCO | NOVA</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/catalogo.css') }}">
+</head>
+<body>
+
+
+<div class="header">
+<h1>Catálogo Digital de Reciclaje</h1>
+</div>
+
+
+<div class="catalog-grid">
+{% for item in items %}
+<div class="item-card">
+<img src="{{ url_for('static', filename='images/' + item.img) }}" alt="img">
+<div class="info">
+<h3>{{ item.name }}</h3>
+<p>{{ item.short }}</p>
+<button class="btn-info" onclick="openModal('{{ item.name }}', '{{ item.long }}')">Más información</button>
+</div>
+</div>
+{% endfor %}
+</div>
+
+
+<div id="modal" class="modal-bg">
+<div class="modal-box">
+<h2 id="modal-title"></h2>
+<p id="modal-text"></p>
+<button class="close-btn" onclick="closeModal()">Cerrar</button>
+</div>
+</div>
+
+
+<script src="{{ url_for('static', filename='js/catalogo.js') }}"></script>
+</body>
+</html>

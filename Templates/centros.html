@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="{{ url_for('static', filename='images/loguito.png') }}">
+  <title>CECYCO | Centros de reciclaje</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/stylecentros.css') }}">
+</head>
+
+<body>
+
+<!-- BOTÓN HAMBURGUESA -->
+<button class="hamburguesa" id="open-menu">☰</button>
+
+<!-- MENÚ LATERAL DESPLEGABLE -->
+<aside class="menu-lateral" id="menu">
+  <button class="cerrar" id="close-menu">✕</button>
+
+  <div class="logos">
+    <img src="{{ url_for('static', filename='images/loguito.png') }}" alt="Logo Escuela" class="logo-escuela">
+    <h1>CECYCO</h1>
+  </div>
+
+  <nav>
+    <a href="{{ url_for('index') }}">INICIO</a>
+    <a href="{{ url_for('importancia') }}">IMPORTANCIA</a>
+    <a href="{{ url_for('maneras') }}">MANERAS DE RECICLAR</a>
+    <a href="{{ url_for('beneficios') }}">BENEFICIOS</a>
+    <a href="{{ url_for('centros') }}">CENTROS</a>
+    <a href="{{ url_for('educacion') }}">EDUCACIÓN</a>
+    <a href="{{ url_for('tecnologia') }}">TECNOLOGÍA</a>
+    <a href="{{ url_for('impacto') }}">IMPACTO</a>
+    <a href="{{ url_for('proyectos') }}">PROYECTOS</a>
+    <a href="{{ url_for('extra') }}">EXTRA</a>
+    <a href="{{ url_for('catalogo') }}">CATÁLOGO DE MATERIALES</a>
+    <a href="#comentarios-section">COMENTARIOS</a>
+  </nav>
+</aside>
+
+
+
+<video autoplay muted loop id="fondo_video">
+  <source src="{{ url_for('static', filename='video/PruebaDeVideo1.mp4') }}" type="video/mp4">
+</video>
+
+<section class="seccion-mapa">
+  <h1 class="titulo-principal">Centro de Reciclaje Cercano</h1>
+
+  <div class="bloque mapa-contenedor">
+    
+    <!-- AQUÍ PEGAS EL IFRAME DE GOOGLE MAPS -->
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.12345!2d-99.12345!3d19.43260!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f123456789ab%3A0xcd123456789abcde!2sCentro%20de%20Reciclaje%20Ejemplo!5e0!3m2!1ses!2smx!4v1700000000000"
+      width="100%" 
+      height="350" 
+      style="border:0; border-radius: 12px;" 
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+
+  </div>
+  <!-- ACOPIO 1 -->
+  <div class="acopio-grid">
+    <div class="acopio-card">
+      <img src="{{ url_for('static', filename='images/hojitac.png') }}" class="acopio-logo" alt="logo">
+      <h2>Centro de Acopio 1</h2>
+      <p><i class="icon">📍</i> <strong>Dirección:</strong>Calle Olacatzan MZ 449 LT 18, Barrio Curtidores, Chimalhuacán, EDOMEX</p>
+      <p><i class="icon">📞</i> <strong>Teléfono de contacto:</strong> 55.7718.6091</p>
+      <p><i class="icon">🕒</i> <strong>Horario de atención:</strong> 08:00 a 17:00</p>
+      <p><i class="icon">♻️</i> <strong>Residuos que recibe:</strong> Cartón, papel, aluminio, PET, PP, HDPE, termoformados de PET y PP (charola, bisagras, domos, etc.)</p>
+      <a href="https://www.google.com.mx/maps/place/Cda.+Yautli+41,+Curtidores,+56366+Chimalhuac%C3%A1n,+M%C3%A9x./@19.440445,-98.9630284,19z/data=!4m15!1m8!3m7!1s0x85d1e387354052ef:0x6af036d7a310b156!2sC.+Olcacatzan+16A,+Curtidores,+56366+Chimalhuac%C3%A1n,+M%C3%A9x.!3b1!8m2!3d19.4403678!4d-98.9631034!16s%2Fg%2F11cpgp6yw3!3m5!1s0x85d1e38747e2f257:0x328b613b0dcc2feb!8m2!3d19.440533!4d-98.9624808!16s%2Fg%2F11w7q8kryq?entry=ttu&g_ep=EgoyMDI1MTIwMi4wIKXMDSoASAFQAw%3D%3D" class="btn-ubicacion" target="_blank">Ubicación</a>
+    </div>
+
+    <!-- ACOPIO 2 -->
+    <div class="acopio-card">
+      <img src="{{ url_for('static', filename='images/hojitac.png') }}" class="acopio-logo" alt="logo">
+      <h2>Centro de Acopio 2</h2>
+      <p><i class="icon">📍</i> <strong>Dirección:</strong> Dirección: Av. Bordo de xochiaca MZ29, Benito Juarez, Nezahualcoyotl, EDOMEX</p>
+      <p><i class="icon">📞</i> <strong>Teléfono de contacto:</strong> 55.1531.4013</p>
+      <p><i class="icon">🕒</i> <strong>Horario de atención:</strong> 08:00 a 17:00</p>
+      <p><i class="icon">♻️</i> <strong>Residuos que recibe:</strong> Cartón, papel, aluminio, PET, PP, HDPE, termoformados de PET y PP (charola, bisagras, domos, etc.)</p>
+      <a href="https://www.google.com/maps/place/19%C2%B024'59.0%22N+99%C2%B000'00.6%22W/@19.4163979,-99.0027317,17z/data=!3m1!4b1!4m4!3m3!8m2!3d19.4163979!4d-99.0001568?entry=tts" class="btn-ubicacion"  target="_blank">Ubicación</a>
+    </div>
+
+    <!-- ACOPIO 3-->
+    <div class="acopio-card">
+      <img src="{{ url_for('static', filename='images/hojitac.png') }}" class="acopio-logo" alt="logo">
+      <h2>Centro de Acopio 3</h2>
+      <p><i class="icon">📍</i> <strong>Dirección:</strong>  Pino #1, San Juan de Dios, Los Arenales, EDOMEX</p>
+      <p><i class="icon">📞</i> <strong>Teléfono de contacto:</strong> 56.3169.5308</p>
+      <p><i class="icon">🕒</i> <strong>Horario de atención:</strong> 08:00 a 17:00</p>
+      <p><i class="icon">♻️</i> <strong>Residuos que recibe:</strong> Cartón, papel, aluminio, PET, PP, HDPE, termoformados de PET y PP (charola, bisagras, domos, etc.)</p>
+      <a href="https://www.google.com/maps/place/Centro+de+acopio+San+juan+de+dios./@19.234501,-98.9027165,17z/data=!3m1!4b1!4m6!3m5!1s0x85ce190fc8905bdd:0x8da0e6033a4357!8m2!3d19.234501!4d-98.9027165!16s%2Fg%2F11t_rcs6_x?entry=ttu&g_ep=EgoyMDI1MTIwMi4wIKXMDSoASAFQAw%3D%3D" class="btn-ubicacion" target="_blank">Ubicación</a>
+    </div>
+
+    <!-- ACOPIO 4 -->
+    <div class="acopio-card">
+      <img src="{{ url_for('static', filename='images/hojitac.png') }}" class="acopio-logo" alt="logo">
+      <h2>Centro de Acopio 19</h2>
+      <p><i class="icon">📍</i> <strong>Dirección:</strong> Agustin Melgar #23, Lomas de Zaragoza, Iztapalapa, CDMX</p>
+      <p><i class="icon">📞</i> <strong>Teléfono de contacto:</strong> 56.2721.3113</p>
+      <p><i class="icon">🕒</i> <strong>Horario de atención:</strong> 08:00 a 17:00</p>
+      <p><i class="icon">♻️</i> <strong>Residuos que recibe:</strong> Cartón, papel, aluminio, PET, PP, HDPE, termoformados de PET y PP (charola, bisagras, domos, etc.)</p>
+      <a href="https://www.google.com.mx/maps/place/Agust%C3%ADn+Melgar+MZ7+LT21,+Lomas+de+Zaragoza,+Iztapalapa,+09620+Ciudad+de+M%C3%A9xico,+CDMX/@19.3567497,-98.9960037,19z/data=!3m1!4b1!4m6!3m5!1s0x85d1e2a3595204ed:0x77314e0993dac407!8m2!3d19.3567497!4d-98.9960037!16s%2Fg%2F11c1xh29pw?entry=ttu&g_ep=EgoyMDI1MTIwMi4wIKXMDSoASAFQAw%3D%3D" class="btn-ubicacion" target="_blank">Ubicación</a>
+    </div>
+
+    <!-- ACOPIO 5 -->
+    <div class="acopio-card">
+      <img src="{{ url_for('static', filename='images/hojitac.png') }}" class="acopio-logo" alt="logo">
+      <h2>Centro de Acopio 5</h2>
+      <p><i class="icon">📍</i> <strong>Dirección:</strong> Pirules 109, Col. La Magdalena Atlicpac, La Magdalena Atlicpac, Méx.</p>
+      <p><i class="icon">📞</i> <strong>Teléfono de contacto:</strong> 55.2251.6731</p>
+      <p><i class="icon">🕒</i> <strong>Horario de atención:</strong> 08:00 a 17:00</p>
+      <p><i class="icon">♻️</i> <strong>Residuos que recibe:</strong> Cartón, papel, aluminio, PET, PP, HDPE, termoformados de PET y PP (charola, bisagras, domos, etc.)</p>
+      <a href="https://www.google.com.mx/maps/place/Pirules+109,+Col.+La+Magdalena+Atlicpac,+56525+La+Magdalena+Atlicpac,+M%C3%A9x./@19.3765058,-98.9461128,18.67z/data=!4m15!1m8!3m7!1s0x85d1e23f68186cc7:0xd0c40595712ccb13!2sPirules+109,+Col.+La+Magdalena+Atlicpac,+56525+La+Magdalena+Atlicpac,+M%C3%A9x.!3b1!8m2!3d19.376447!4d-98.9458392!16s%2Fg%2F11vjhdynfq!3m5!1s0x85d1e23f68186cc7:0xd0c40595712ccb13!8m2!3d19.376447!4d-98.9458392!16s%2Fg%2F11vjhdynfq?entry=ttu&g_ep=EgoyMDI1MTIwMi4wIKXMDSoASAFQAw%3D%3D" class="btn-ubicacion" target="_blank">Ubicación</a>
+    </div>
+
+    <!-- ACOPIO 6 -->
+    <div class="acopio-card">
+      <img src="{{ url_for('static', filename='images/hojitac.png') }}" class="acopio-logo" alt="logo">
+      <h2>Centro de Acopio 6</h2>
+      <p><i class="icon">📍</i> <strong>Dirección:</strong>  Av. Sindicalismo MZ11 LT1, Chimalhuacan, EDOMEX</p>
+      <p><i class="icon">📞</i> <strong>Teléfono de contacto:</strong> 55.6124.8154</p>
+      <p><i class="icon">🕒</i> <strong>Horario de atención:</strong> 08:00 a 17:00</p>
+      <p><i class="icon">♻️</i> <strong>Residuos que recibe:</strong> Cartón, papel, aluminio, PET, PP, HDPE, termoformados de PET y PP (charola, bisagras, domos, etc.)</p>
+      <a href="https://www.google.com/maps?q=Ote+249-A+33-101+Agricola+Oriental" class="btn-ubicacion" target="_blank">Ubicación</a>
+    </div>
+
+    <!-- ACOPIO 7 -->
+    <div class="acopio-card">
+      <img src="{{ url_for('static', filename='images/hojitac.png') }}" class="acopio-logo" alt="logo">
+      <h2>Centro de Acopio 7</h2>
+      <p><i class="icon">📍</i> <strong>Dirección:</strong>   Av Lázaro Cárdenas #263, Doctores, Cuauhtémoc, CDMX</p>
+      <p><i class="icon">📞</i> <strong>Teléfono de contacto:</strong> 56.1800.2539</p>
+      <p><i class="icon">🕒</i> <strong>Horario de atención:</strong> 08:00 a 17:00</p>
+      <p><i class="icon">♻️</i> <strong>Residuos que recibe:</strong> Cartón, papel, aluminio, PET, PP, HDPE, termoformados de PET y PP (charola, bisagras, domos, etc.)</p>
+      <a href="https://www.google.com.mx/maps/place/Eje+Central+L%C3%A1zaro+C%C3%A1rdenas+263,+Obrera,+Cuauht%C3%A9moc,+06720+Ciudad+de+M%C3%A9xico,+CDMX/@19.4081452,-99.1447375,19z/data=!4m6!3m5!1s0x85d1fee0112e9753:0x9eed6be64095fc0f!8m2!3d19.40819!4d-99.1447221!16s%2Fg%2F11pdykg7qf?entry=ttu&g_ep=EgoyMDI1MTIwMi4wIKXMDSoASAFQAw%3D%3D" class="btn-ubicacion" target="_blank">Ubicación</a>
+    </div>
+
+    <!-- ACOPIO 8 -->
+    <div class="acopio-card">
+      <img src="{{ url_for('static', filename='images/hojitac.png') }}" class="acopio-logo" alt="logo">
+      <h2>Centro de Acopio 8</h2>
+      <p><i class="icon">📍</i> <strong>Dirección:</strong>   Cd. Amapola MZ1 LT6, Lomas de Buena vista, Chimalhuacan, EDOMEX</p>
+      <p><i class="icon">📞</i> <strong>Teléfono de contacto:</strong> 56.3104.6744</p>
+      <p><i class="icon">🕒</i> <strong>Horario de atención:</strong> 08:00 a 17:00</p>
+      <p><i class="icon">♻️</i> <strong>Residuos que recibe:</strong> Cartón, papel, aluminio, PET, PP, HDPE, termoformados de PET y PP (charola, bisagras, domos, etc.)</p>
+      <a href="https://www.google.com/maps/place/19%C2%B023'29.3%22N+98%C2%B055'32.7%22W/@19.3914722,-98.92575,17z/data=!3m1!4b1!4m4!3m3!8m2!3d19.3914722!4d-98.92575?entry=ttu&g_ep=EgoyMDI1MTIwMi4wIKXMDSoASAFQAw%3D%3D" class="btn-ubicacion" target="_blank">Ubicación</a>
+    </div>
+
+    <!-- ACOPIO 9 -->
+    <div class="acopio-card">
+      <img src="{{ url_for('static', filename='images/hojitac.png') }}" class="acopio-logo" alt="logo">
+      <h2>Centro de Acopio 9</h2>
+      <p><i class="icon">📍</i> <strong>Dirección:</strong>  Av. luis Cerón #16, El pino, La Paz, EDOMEX</p>
+      <p><i class="icon">📞</i> <strong>Teléfono de contacto:</strong> 55.2319.3755</p>
+      <p><i class="icon">🕒</i> <strong>Horario de atención:</strong> 08:00 a 17:00</p>
+      <p><i class="icon">♻️</i> <strong>Residuos que recibe:</strong> Cartón, papel, aluminio, PET, PP, HDPE, termoformados de PET y PP (charola, bisagras, domos, etc.)</p>
+      <a href="https://www.google.com.mx/maps/place/19%C2%B021'25.9%22N+98%C2%B057'15.1%22W/@19.3557978,-98.953512,21z/data=!4m4!3m3!8m2!3d19.357188!4d-98.954206?entry=ttu&g_ep=EgoyMDI1MTIwMi4wIKXMDSoASAFQAw%3D%3D" class="btn-ubicacion" target="_blank">Ubicación</a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .seccion-mapa {
+    width: 95%;
+    max-width: 1400px;
+    margin: 60px auto;
+    padding: 40px;
+    border-radius: 18px;
+    background: linear-gradient(135deg, #4a0f39, #6f2d85, #3b3fa8);
+    color: #fff;
+    font-family: "Segoe UI", Arial, sans-serif;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.35);
+  }
+
+  .titulo-principal {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 32px;
+    font-weight: 800;
+  }
+
+  .mapa-contenedor {
+    background: rgba(255,255,255,0.08);
+    padding: 25px;
+    border-radius: 14px;
+    backdrop-filter: blur(4px);
+  }
+
+  .acopio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 por fila */
+    gap: 25px; /* espacio entre tarjetas */
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .icon {
+    font-style: normal;
+    font-size: 1.6rem;
+    filter: grayscale(1) brightness(0.2);
+}
+
+
+
+  /* RESPONSIVE: en celular se hacen 1 por fila */
+  @media (max-width: 900px) {
+      .acopio-grid {
+          grid-template-columns: repeat(2, 1fr);
+      }
+  }
+
+  @media (max-width: 600px) {
+      .acopio-grid {
+          grid-template-columns: 1fr;
+      }
+  }
+
+</style>
+
+
+<script defer src="{{ url_for('static', filename='JS/script.js') }}"></script>
+</body>
+</html>

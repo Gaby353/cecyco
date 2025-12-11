@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="{{ url_for('static', filename='images/loguito.png') }}">
+  <title>CECYCO | Información Extra</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <script defer src="{{ url_for('static', filename='JS/script.js') }}"></script>
+</head>
+
+<body>
+
+<!-- BOTÓN HAMBURGUESA -->
+<button class="hamburguesa" id="open-menu">☰</button>
+
+<!-- MENÚ LATERAL DESPLEGABLE -->
+<aside class="menu-lateral" id="menu">
+  <button class="cerrar" id="close-menu">✕</button>
+
+  <div class="logos">
+    <img src="{{ url_for('static', filename='images/loguito.png') }}" alt="Logo Escuela" class="logo-escuela">
+    <h1>CECYCO</h1>
+  </div>
+
+  <nav>
+    <a href="{{ url_for('index') }}">INICIO</a>
+    <a href="{{ url_for('importancia') }}">IMPORTANCIA</a>
+    <a href="{{ url_for('maneras') }}">MANERAS DE RECICLAR</a>
+    <a href="{{ url_for('beneficios') }}">BENEFICIOS</a>
+    <a href="{{ url_for('centros') }}">CENTROS</a>
+    <a href="{{ url_for('educacion') }}">EDUCACIÓN</a>
+    <a href="{{ url_for('tecnologia') }}">TECNOLOGÍA</a>
+    <a href="{{ url_for('impacto') }}">IMPACTO</a>
+    <a href="{{ url_for('proyectos') }}">PROYECTOS</a>
+    <a href="{{ url_for('extra') }}">EXTRA</a>
+    <a href="{{ url_for('catalogo') }}">CATÁLOGO DE MATERIALES</a>
+    <a href="#comentarios-section">COMENTARIOS</a>
+  </nav>
+</aside>
+
+<video autoplay muted loop id="fondo_video">
+  <source src="{{ url_for('static', filename='video/PruebaDeVideo1.mp4') }}" type="video/mp4">
+</video>
+
+<section class="seccion-economia">
+
+  <h1 class="titulo-principal">Reciclaje y Economía Circular</h1>
+
+  <div class="bloque">
+    <p>
+      El reciclaje forma parte fundamental del concepto de economía circular, que busca mantener los materiales 
+      en uso el mayor tiempo posible. En lugar de desechar productos después de utilizarlos una sola vez, la 
+      economía circular propone repararlos, reutilizarlos, transformarlos o reciclarlos, creando ciclos 
+      continuos que disminuyen la extracción de recursos naturales.
+    </p>
+  </div>
+
+  <div class="bloque">
+    <p>
+      En México, se generan alrededor de 44 millones de toneladas de residuos al año, pero solo entre el 
+      17 % y 20 % se reciclan. Esto demuestra un gran potencial para mejorar la gestión de residuos si aumenta 
+      la participación ciudadana y se fortalecen infraestructuras como centros de acopio y plantas de reciclaje. 
+      Asimismo, las normas ambientales mexicanas (como la NOM-161 o la Ley General para la Prevención y Gestión 
+      Integral de los Residuos) buscan impulsar la separación adecuada, el manejo especial de ciertos materiales 
+      y la adopción de modelos circulares en empresas.
+    </p>
+  </div>
+
+  <div class="bloque">
+    <p>
+      A nivel internacional, organismos como la ONU, la Unión Europea y diversas ONG promueven políticas y 
+      campañas para incrementar el reciclaje global. Entre ellas destacan acuerdos para reducir plásticos 
+      de un solo uso, impulsar envases retornables y fomentar procesos industriales más sostenibles.
+    </p>
+  </div>
+
+  <div class="bloque">
+    <p>
+      Comprender el reciclaje dentro del marco de la economía circular ayuda a ver que no se trata solo de 
+      gestionar residuos, sino de rediseñar la forma en que producimos y consumimos. Cada producto puede tener 
+      múltiples vidas si se planifica adecuadamente. Esto convierte al reciclaje en una estrategia clave para 
+      enfrentar los desafíos ambientales actuales y futuros.
+    </p>
+  </div>
+
+</section>
+
+
+<style>
+  .seccion-economia {
+    width: 90%;
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 40px;
+    border-radius: 18px;
+    background: linear-gradient(135deg, #4a0f39, #6f2d85, #3b3fa8);
+    color: #fff;
+    font-family: "Segoe UI", Arial, sans-serif;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+  }
+
+  .titulo-principal {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: 1px;
+  }
+
+  .bloque {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 22px 20px;
+    border-radius: 14px;
+    margin-bottom: 22px;
+    backdrop-filter: blur(4px);
+  }
+
+  .bloque p {
+    font-size: 17px;
+    line-height: 1.7;
+    margin: 0;
+    text-align: justify;
+  }
+</style>
+
+
+</body>
+</html>

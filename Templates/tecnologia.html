@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="{{ url_for('static', filename='images/loguito.png') }}">
+  <title>CECYCO | Tecnología e Innovación en el Reciclaje</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <script defer src="{{ url_for('static', filename='JS/script.js') }}"></script>
+</head>
+
+<body>
+
+<!-- BOTÓN HAMBURGUESA -->
+<button class="hamburguesa" id="open-menu">☰</button>
+
+<!-- MENÚ LATERAL DESPLEGABLE -->
+<aside class="menu-lateral" id="menu">
+  <button class="cerrar" id="close-menu">✕</button>
+
+  <div class="logos">
+    <img src="{{ url_for('static', filename='images/loguito.png') }}" alt="Logo Escuela" class="logo-escuela">
+    <h1>CECYCO</h1>
+  </div>
+
+  <nav>
+    <a href="{{ url_for('index') }}">INICIO</a>
+    <a href="{{ url_for('importancia') }}">IMPORTANCIA</a>
+    <a href="{{ url_for('maneras') }}">MANERAS DE RECICLAR</a>
+    <a href="{{ url_for('beneficios') }}">BENEFICIOS</a>
+    <a href="{{ url_for('centros') }}">CENTROS</a>
+    <a href="{{ url_for('educacion') }}">EDUCACIÓN</a>
+    <a href="{{ url_for('tecnologia') }}">TECNOLOGÍA</a>
+    <a href="{{ url_for('impacto') }}">IMPACTO</a>
+    <a href="{{ url_for('proyectos') }}">PROYECTOS</a>
+    <a href="{{ url_for('extra') }}">EXTRA</a>
+    <a href="{{ url_for('catalogo') }}">CATÁLOGO DE MATERIALES</a>
+    <a href="#comentarios-section">COMENTARIOS</a>
+  </nav>
+</aside>
+
+<video autoplay muted loop id="fondo_video">
+  <source src="{{ url_for('static', filename='video/PruebaDeVideo1.mp4') }}" type="video/mp4">
+</video>
+
+<section class="seccion-tecnologia">
+
+  <h1 class="titulo-principal">Tecnología e Innovación en el Reciclaje</h1>
+  <p class="introduccion">
+    Los avances tecnológicos han transformado profundamente la forma en que reciclamos, permitiendo 
+    procesos más rápidos, precisos y sostenibles. Gracias a estas innovaciones, cada vez más materiales 
+    pueden recuperarse y reincorporarse a la economía circular.
+  </p>
+
+  <!-- SUBTEMA 1 -->
+  <div class="bloque">
+    <h2>🤖 1. Automatización y sistemas inteligentes</h2>
+    <p>
+      La modernización del reciclaje ha sido impulsada especialmente por sensores ópticos, robots 
+      clasificadores y sistemas basados en inteligencia artificial. Estas tecnologías identifican 
+      materiales como plástico, vidrio, metales o papel con gran precisión y a velocidades imposibles 
+      para el trabajo manual.
+    </p>
+    <p>
+      Gracias a su capacidad para reducir la contaminación entre materiales, mejoran la calidad de los 
+      lotes reciclables y aumentan significativamente las tasas de recuperación.
+    </p>
+  </div>
+
+  <!-- SUBTEMA 2 -->
+  <div class="bloque">
+    <h2>🧪 2. Reciclaje químico y pirólisis</h2>
+    <p>
+      El reciclaje químico ha evolucionado hasta convertirse en una herramienta clave para tratar 
+      plásticos complejos que antes no podían reciclarse con buenos resultados. Este método descompone 
+      los polímeros en sus componentes básicos para fabricar productos nuevos de alta calidad.
+    </p>
+    <p>
+      Tecnologías como la <strong>pirólisis</strong> permiten transformar residuos plásticos en combustibles, 
+      aceites industriales y otras materias primas, ampliando enormemente el potencial de recuperación de 
+      residuos.
+    </p>
+  </div>
+
+  <!-- SUBTEMA 3 -->
+  <div class="bloque">
+    <h2>📱 3. Aplicaciones móviles y plataformas digitales</h2>
+    <p>
+      Las herramientas digitales están fortaleciendo la participación ciudadana en el reciclaje. 
+      Aplicaciones como <strong>Ecolana</strong> ayudan a ubicar centros de acopio cercanos, informan sobre 
+      qué materiales reciclar y fomentan hábitos sostenibles mediante información clara y accesible.
+    </p>
+    <p>
+      También destacan las <strong>Reverse Vending Machines</strong>, máquinas de recompensas que permiten 
+      depositar envases como botellas o latas y recibir puntos, descuentos o premios por reciclar.
+    </p>
+  </div>
+
+  <!-- SUBTEMA 4 -->
+  <div class="bloque">
+    <h2>⚙️ 4. Un futuro más eficiente y circular</h2>
+    <p>
+      Gracias a las innovaciones tecnológicas, el reciclaje es cada vez más eficiente y capaz de 
+      recuperar materiales que antes se consideraban basura irrecuperable. Esto impulsa la 
+      <strong>economía circular</strong>, reduce la contaminación global y facilita que más personas se 
+      sumen a la cultura del reciclaje.
+    </p>
+    <p>
+      La combinación de automatización, química avanzada y participación digital permite enfrentar los 
+      desafíos ambientales con soluciones modernas y escalables.
+    </p>
+  </div>
+
+</section>
+
+<style>
+  .seccion-tecnologia {
+    width: 90%;
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 40px;
+    border-radius: 18px;
+    background: linear-gradient(135deg, #4a0f39, #6f2d85, #3b3fa8);
+    color: #fff;
+    font-family: "Segoe UI", Arial, sans-serif;
+    line-height: 1.7;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.35);
+  }
+
+  .titulo-principal {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 32px;
+    font-weight: 800;
+  }
+
+  .introduccion {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 18px;
+    opacity: 0.95;
+  }
+
+  .bloque {
+    background: rgba(255,255,255,0.08);
+    padding: 25px 20px;
+    border-radius: 14px;
+    margin-bottom: 25px;
+    backdrop-filter: blur(4px);
+  }
+
+  .bloque h2 {
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-weight: 700;
+  }
+
+  .bloque p {
+    margin-bottom: 12px;
+    font-size: 16px;
+  }
+</style>
+
+
+</body>
+</html>

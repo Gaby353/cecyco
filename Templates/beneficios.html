@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="{{ url_for('static', filename='images/loguito.png') }}">
+  <title>CECYCO | Beneficios del Reciclaje</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <script defer src="{{ url_for('static', filename='JS/script.js') }}"></script>
+</head>
+
+<body>
+
+<!-- BOTÓN HAMBURGUESA -->
+<button class="hamburguesa" id="open-menu">☰</button>
+
+<!-- MENÚ LATERAL DESPLEGABLE -->
+<aside class="menu-lateral" id="menu">
+  <button class="cerrar" id="close-menu">✕</button>
+
+  <div class="logos">
+    <img src="{{ url_for('static', filename='images/loguito.png') }}" alt="Logo Escuela" class="logo-escuela">
+    <h1>CECYCO</h1>
+  </div>
+
+  <nav>
+    <a href="{{ url_for('index') }}">INICIO</a>
+    <a href="{{ url_for('importancia') }}">IMPORTANCIA</a>
+    <a href="{{ url_for('maneras') }}">MANERAS DE RECICLAR</a>
+    <a href="{{ url_for('beneficios') }}">BENEFICIOS</a>
+    <a href="{{ url_for('centros') }}">CENTROS</a>
+    <a href="{{ url_for('educacion') }}">EDUCACIÓN</a>
+    <a href="{{ url_for('tecnologia') }}">TECNOLOGÍA</a>
+    <a href="{{ url_for('impacto') }}">IMPACTO</a>
+    <a href="{{ url_for('proyectos') }}">PROYECTOS</a>
+    <a href="{{ url_for('extra') }}">EXTRA</a>
+    <a href="{{ url_for('catalogo') }}">CATÁLOGO DE MATERIALES</a>
+    <a href="#comentarios-section">COMENTARIOS</a>
+  </nav>
+</aside>
+
+<video autoplay muted loop id="fondo_video">
+  <source src="{{ url_for('static', filename='video/PruebaDeVideo1.mp4') }}" type="video/mp4">
+</video>
+
+<section class="seccion-beneficios">
+
+  <h1 class="titulo-principal">Beneficios del Reciclaje</h1>
+  <p class="introduccion">
+    El reciclaje aporta ventajas ambientales, económicas y sociales que fortalecen la sostenibilidad 
+    de las comunidades modernas. Estas prácticas no solo reducen la contaminación, sino que también 
+    impulsan la economía verde y mejoran la calidad de vida.
+  </p>
+
+  <!-- SUBTEMA 1 -->
+  <div class="bloque">
+    <h2>🌎 1. Beneficios Ambientales</h2>
+    <p>
+      Reciclar protege los ecosistemas y disminuye la explotación de recursos naturales como árboles, 
+      minerales y petróleo. Dar “una segunda vida” a los materiales reduce el impacto ambiental asociado 
+      a la manufactura tradicional.
+    </p>
+    <p>
+      El ahorro energético es considerable: producir aluminio nuevo requiere hasta 20 veces más energía 
+      que reciclarlo, mientras que el reciclaje de papel consume alrededor de 60% menos energía. 
+      Además, una tonelada de plástico reciclado evita la emisión de cerca de 2 toneladas de CO₂.
+    </p>
+    <p>
+      También disminuye la emisión de metano en los vertederos, uno de los gases de efecto invernadero
+      más peligrosos. Todo esto ayuda a mitigar el cambio climático y a proteger la biodiversidad.
+    </p>
+  </div>
+
+  <!-- SUBTEMA 2 -->
+  <div class="bloque">
+    <h2>💰 2. Beneficios Económicos</h2>
+    <p>
+      El reciclaje fortalece la economía verde, reduciendo costos de producción y permitiendo que las 
+      empresas usen materiales más económicos y sustentables. En muchos casos, usar material reciclado 
+      ahorra hasta un 70% de energía comparado con materias primas vírgenes.
+    </p>
+    <p>
+      También genera empleo: en Estados Unidos, la industria del reciclaje sostiene alrededor de 
+      757,000 empleos. En la Unión Europea, se estima que aumentar las tasas de reciclaje podría crear 
+      cerca de 500,000 empleos adicionales.
+    </p>
+    <p>
+      Además, impulsa nuevos modelos de negocio como centros de acopio, recicladores urbanos, 
+      emprendimientos de remanufactura y proyectos de innovación circular.
+    </p>
+  </div>
+
+  <!-- SUBTEMA 3 -->
+  <div class="bloque">
+    <h2>🤝 3. Beneficios Sociales y Educativos</h2>
+    <p>
+      Reciclar fortalece la conciencia ambiental colectiva y fomenta la participación ciudadana en 
+      actividades comunitarias, escolares y empresariales. Estas prácticas ayudan a formar valores de 
+      cooperación, responsabilidad y respeto por el entorno.
+    </p>
+    <p>
+      Reduce la acumulación de basura en calles y espacios públicos, lo que mejora la salud comunitaria 
+      al disminuir plagas, malos olores y focos de contaminación.
+    </p>
+    <p>
+      Las campañas de reciclaje escolar enseñan a los jóvenes la importancia del cuidado del planeta, 
+      creando generaciones más conscientes y comprometidas con la sostenibilidad.
+    </p>
+  </div>
+
+  <!-- SUBTEMA 4 -->
+  <div class="bloque">
+    <h2>🏙️ 4. Resiliencia y Estabilidad Urbana</h2>
+    <p>
+      Las ciudades que reciclan más dependen menos de vertederos y de la extracción constante de materias 
+      primas, lo que las vuelve más fuertes frente a crisis ambientales o económicas.
+    </p>
+    <p>
+      Al reducir la presión sobre los recursos naturales, se promueve un sistema más estable y sostenible, 
+      capaz de adaptarse mejor a escenarios de escasez o fluctuaciones globales.
+    </p>
+    <p>
+      En este sentido, el reciclaje no solo es una práctica ecológica, sino una inversión estratégica 
+      para el bienestar y futuro de las comunidades urbanas.
+    </p>
+  </div>
+
+</section>
+
+<style>
+  .seccion-beneficios {
+    width: 90%;
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 40px;
+    border-radius: 18px;
+    background: linear-gradient(135deg, #4a0f39, #6f2d85, #3b3fa8);
+    color: #fff;
+    font-family: "Segoe UI", Arial, sans-serif;
+    line-height: 1.7;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.35);
+  }
+
+  .titulo-principal {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 32px;
+    font-weight: 800;
+  }
+
+  .introduccion {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 18px;
+    opacity: 0.95;
+  }
+
+  .bloque {
+    background: rgba(255,255,255,0.08);
+    padding: 25px 20px;
+    border-radius: 14px;
+    margin-bottom: 25px;
+    backdrop-filter: blur(4px);
+  }
+
+  .bloque h2 {
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-weight: 700;
+  }
+
+  .bloque p {
+    margin-bottom: 12px;
+    font-size: 16px;
+  }
+</style>
+</body>
+</html>
